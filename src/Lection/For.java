@@ -12,6 +12,5 @@ public class For {
                 System.out.println(i);
             }
         }
-        System.out.println();
     }
 }
