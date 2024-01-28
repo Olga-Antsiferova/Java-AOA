@@ -2,7 +2,7 @@ package Lection;
 
 public class Average
 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int a = 3;
         int lastNumber = 17;
@@ -16,13 +16,13 @@ public class Average
             numbersCount++;
 
             if (a % 2 == 0) {
-                evenNumbersSum += a;
+               evenNumbersSum += a;
                 evenNumbersCount++;
             }
 
-            ++a;
+           ++a;
         }
-        double numbersAverage = (double) numbersSum / numbersCount;
+       double numbersAverage = (double) numbersSum / numbersCount;
         System.out.println("Среднее арифметическое чисел = " + numbersAverage);
 
         double evenNumbersAverage = (double) evenNumbersSum / evenNumbersCount;
