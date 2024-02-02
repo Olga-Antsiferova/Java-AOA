@@ -1,26 +1,35 @@
 package Lection;
 
+import java.util.Scanner;
 public class Average
 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int a = 3;
-        int lastNumber = 17;
+        System.out.print("Введите начальное число от 3 до 17: ");
+        int firstNumber = scanner.nextInt();
+        System.out.print("Введите конечное число от 3 до 17: ");
+        int lastNumber=scanner.nextInt();
+
+        //int firstNumber=3;
+        //int lastNumber=17;
         int numbersCount = 0;
         int numbersSum = 0;
         int evenNumbersSum = 0;
         int evenNumbersCount = 0;
 
-        while (a <= lastNumber) {
-            numbersSum += a;
+        System.out.print("Введите число: ");
+
+        while (firstNumber <= lastNumber) {
+            numbersSum += firstNumber;
             numbersCount++;
 
-            if (a % 2 == 0) {
-               evenNumbersSum += a;
+            if (firstNumber % 2 == 0) {
+               evenNumbersSum += firstNumber;
                 evenNumbersCount++;
             }
 
-           ++a;
+           ++firstNumber;
         }
        double numbersAverage = (double) numbersSum / numbersCount;
         System.out.println("Среднее арифметическое чисел = " + numbersAverage);
