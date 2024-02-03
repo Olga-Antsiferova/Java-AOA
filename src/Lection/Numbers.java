@@ -8,7 +8,8 @@ public class Numbers {
 
         System.out.println("Введите целое число:");
         int number = scanner.nextInt();
-        System.out.println(Math.abs(number));
+        number = Math.abs(number);
+
 
         int numbersSum = 0;
         int oddNumbersSum = 0;
