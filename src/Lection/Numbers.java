@@ -3,11 +3,12 @@ package Lection;
 import java.util.Scanner;
 
 public class Numbers {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите целое число:");
         int number = scanner.nextInt();
+        System.out.println(Math.abs(number));
 
         int numbersSum = 0;
         int oddNumbersSum = 0;
