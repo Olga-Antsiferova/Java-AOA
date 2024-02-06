@@ -13,8 +13,5 @@ public class For {
                 System.out.println(i);
             }
         }
-
     }
 }
-
-
