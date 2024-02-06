@@ -29,20 +29,7 @@ public class Numbers {
 
             number /= 10;
         }
-        while (number < 0) {
-            int digit = number % 10;
-            numbersSum -= digit;
 
-            if (digit % 2 != 0) {
-                oddNumbersSum -= digit;
-            }
-
-            if (digit < maxNumber) {
-                maxNumber = digit;
-            }
-
-            number /= 10;
-        }
         System.out.println("Сумма цифр числа: " + numbersSum);
         System.out.println("Сумма нечетных цифр числа: " + oddNumbersSum);
         System.out.println("Максимальная цифра числа: " + maxNumber);
